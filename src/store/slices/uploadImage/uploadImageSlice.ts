@@ -54,7 +54,7 @@ const uploadImageSlice = createSlice({
     });
     builder.addCase(uploadImage.fulfilled, (state, { payload }) => {
       state.status = FetchStatus.Success;
-      state.imageUrl = 'http://localhost:8080/api' + payload.url;
+      state.imageUrl = 'https://my-blog-ckvh.onrender.com/api' + payload.url;
     });
   },
 });
