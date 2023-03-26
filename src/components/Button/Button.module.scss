@@ -1,0 +1,39 @@
+.button {
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid var(--blue);
+}
+.button-fill {
+  background: var(--blue);
+
+  &:hover {
+    background: var(--blueHover);
+  }
+}
+.button-outline {
+  color: var(--blue);
+
+  &:hover {
+    color: #fff;
+    background: var(--blue);
+  }
+}
+.button-delete {
+  background: rgb(238, 83, 83);
+  border: none;
+
+  &:hover {
+    color: #fff;
+    background: rgb(238, 148, 148);
+  }
+}
+.button-sm {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.button-mb {
+  padding: 10px 20px;
+}

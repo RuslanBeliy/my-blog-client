@@ -1,0 +1,23 @@
+.notFoundPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 100vh;
+}
+
+.wrap {
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background: #fff;
+  box-shadow: var(--shadowLight);
+}
+
+.title {
+  margin-bottom: 20px;
+}

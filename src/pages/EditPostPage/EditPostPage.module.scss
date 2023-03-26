@@ -1,0 +1,13 @@
+.editPostPage {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}

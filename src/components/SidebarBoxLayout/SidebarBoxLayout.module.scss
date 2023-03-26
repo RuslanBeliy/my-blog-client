@@ -1,0 +1,28 @@
+.sidebarLayout {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: var(--shadowLight);
+}
+.title {
+  margin-bottom: 20px;
+}
+
+.addComment {
+  text-align: right;
+}
+.textarea {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.warning {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--gray);
+
+  & > a {
+    color: var(--blueHover);
+  }
+}

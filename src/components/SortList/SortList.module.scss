@@ -1,0 +1,28 @@
+.sortList {
+  display: flex;
+  align-items: center;
+}
+
+.sortItem {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--blue);
+  }
+
+  &.active {
+    color: var(--blue);
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--blue);
+    }
+  }
+}

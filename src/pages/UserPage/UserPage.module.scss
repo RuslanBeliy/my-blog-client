@@ -1,0 +1,59 @@
+.userPage {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.wrap {
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 500px;
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  box-shadow: var(--shadowLight);
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.img {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 36px;
+    background: var(--blue);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.item {
+  font-weight: 600;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  span {
+    font-size: 14px;
+    color: var(--gray);
+    font-weight: 400;
+  }
+}

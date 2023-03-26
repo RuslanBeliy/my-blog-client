@@ -1,0 +1,35 @@
+.listOfTags {
+}
+
+.wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.spinner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tagItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  box-shadow: -2px 2px 10px var(--blue);
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 50px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.activeTag {
+  opacity: 0.6;
+}
