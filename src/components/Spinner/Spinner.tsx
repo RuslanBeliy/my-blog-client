@@ -13,7 +13,6 @@ export const Spinner: FC<Props> = () => {
       color='#7982ff'
       ariaLabel='triangle-loading'
       wrapperStyle={{}}
-      wrapperClassName=''
       visible={true}
     />
   );

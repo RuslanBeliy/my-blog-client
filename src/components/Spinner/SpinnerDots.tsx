@@ -14,7 +14,6 @@ export const SpinnerDots: FC<Props> = () => {
       color='#7982ff'
       ariaLabel='three-dots-loading'
       wrapperStyle={{}}
-      wrapperClassName=''
       visible={true}
     />
   );
