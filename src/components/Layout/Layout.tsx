@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
@@ -9,23 +9,36 @@ import { useAppDispatch } from '../../hooks';
 import { userMe } from '../../store/slices/auth/authSlice';
 import { Footer } from '../Footer';
 import { Header } from '../Header';
+import { Spinner, SpinnerDots } from '../Spinner';
 
 interface Props {}
 
 export const Layout: FC<Props> = () => {
   const dispatch = useAppDispatch();
+  const [firstLoading, setFirstLoading] = useState(true);
   useEffect(() => {
-    dispatch(userMe());
+    (async () => {
+      await dispatch(userMe());
+      setFirstLoading(false);
+    })();
   }, []);
 
   return (
-    <div className={s.layout}>
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-      <ToastContainer position='bottom-right' />
-    </div>
+    <>
+      {firstLoading ? (
+        <div className={s.spinner}>
+          <SpinnerDots />
+        </div>
+      ) : (
+        <div className={s.layout}>
+          <Header />
+          <main>
+            <Outlet />
+          </main>
+          <Footer />
+          <ToastContainer position='bottom-right' />
+        </div>
+      )}
+    </>
   );
 };

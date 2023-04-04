@@ -66,7 +66,7 @@ interface State {
 
 const initialState: State = {
   message: '',
-  token: getTokenLS(),
+  token: '',
   user: null,
   errors: [],
   status: FetchStatus.Idle,
@@ -133,6 +133,7 @@ const authSlice = createSlice({
       state.status = FetchStatus.Success;
       state.message = payload.message;
       state.user = payload.userData;
+      state.token = getTokenLS();
     });
     builder.addCase(deleteUser.pending, (state) => {
       state.status = FetchStatus.Loading;
