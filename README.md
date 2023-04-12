@@ -1,3 +1,11 @@
+## About project  
+  
+
+App for posting and commenting on articles 
+  
+Preview - https://my-blog-three-gules.vercel.app/
+
+
 ## How to run project  
   
 
